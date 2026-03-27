@@ -1,0 +1,18 @@
+# Local configuration files (DO NOT PUSH)
+.env
+
+# Generated data files
+*.csv
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Chrome profile folders (if enabled)
+ChromeProfile/
