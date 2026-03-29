@@ -1,11 +1,11 @@
-# 🕵️‍♂️ Trustpilot Review Scraper 📊
+#  Trustpilot Review Scraper 
 
 A professional-grade Python tool designed to scrape customer reviews (date, rating, title, and body) from any company profile on Trustpilot.
 It leverages `undetected_chromedriver` to bypass anti-bot protections and supports secure email-based authentication.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 * **Anti-Bot Bypass**: Uses `undetected_chromedriver` to reduce detection risk
 * **Authentication Support**: Login via email with OTP verification directly in the terminal
@@ -15,7 +15,7 @@ It leverages `undetected_chromedriver` to bypass anti-bot protections and suppor
 
 ---
 
-## 🛠️ Prerequisites
+##  Prerequisites
 
 Before getting started, make sure you have:
 
@@ -25,7 +25,7 @@ Before getting started, make sure you have:
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the repository
 
@@ -79,27 +79,27 @@ cp .env.example .env
 ### 2. Fill in your configuration
 
 ```env
-# 🌐 Target company Trustpilot page
+#  Target company Trustpilot page
 TARGET_URL=https://www.trustpilot.com/review/example.com
 
-# 📧 Your Trustpilot login email
+#  Your Trustpilot login email
 USER_EMAIL=your_email@example.com
 
-# 📄 Scraping range
+#  Scraping range
 START_PAGE=1
 END_PAGE=5
 
-# 🖥️ Browser mode
+#  Browser mode
 # True = headless (no browser UI)
 # False = visible browser (recommended for debugging)
 HEADLESS=False
 
-# ⚙️ Optional: Force Chrome version (only if mismatch error occurs)
+#  Optional: Force Chrome version (only if mismatch error occurs)
 # Example: CHROME_VERSION=146
 # CHROME_VERSION=
 ```
 
-### 💡 Notes
+###  Notes
 
 * Never share your `.env` file publicly
 * Ensure `.env` is listed in your `.gitignore`
@@ -108,7 +108,7 @@ HEADLESS=False
 
 ---
 
-## 🖥️ Usage
+##  Usage
 
 Run the scraper:
 
@@ -116,14 +116,14 @@ Run the scraper:
 python trustpilot_scraper.py
 ```
 
-### 🔐 Login Process
+###  Login Process
 
 1. Chrome will open automatically
 2. Your email will be entered
 3. Check your inbox for the OTP code
 4. Enter the code in the terminal
 
-### 📊 Data Collection
+###  Data Collection
 
 * The bot navigates through pages automatically
 * Extracts reviews (date, rating, title, body)
@@ -131,9 +131,9 @@ python trustpilot_scraper.py
 
 ---
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
-### ❌ ChromeDriver Version Error
+###  ChromeDriver Version Error
 
 **Error:** `SessionNotCreatedException`
 
@@ -148,7 +148,7 @@ CHROME_VERSION=146
 
 ---
 
-### ❌ Connection Error
+###  Connection Error
 
 **Error:** `getaddrinfo failed` / `[Errno 11001]`
 
@@ -159,7 +159,7 @@ CHROME_VERSION=146
 
 ---
 
-## ⚠️ Legal Disclaimer
+##  Legal Disclaimer
 
 This tool is for educational purposes only.
 Web scraping may violate Trustpilot's Terms of Service.
@@ -174,7 +174,7 @@ The author is not responsible for misuse.
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License**.
 
